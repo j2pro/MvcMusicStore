@@ -79,7 +79,7 @@ namespace MvcMusicStore.Controllers
             {
                 // Attempt to register the user
                 MembershipCreateStatus createStatus;
-                Membership.CreateUser(model.UserName, model.Password, model.Email, null, null, true, null, out createStatus);
+                Membership.CreateUser(model.UserName, model.Password, model.Email, "question", "answer", true, null, out createStatus);
 
                 if (createStatus == MembershipCreateStatus.Success)
                 {
